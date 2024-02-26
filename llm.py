@@ -20,7 +20,7 @@ Given the following conversation: \n
 interpret the instructions and apply them to generate a structured response in JSON format
 The response format should specify actions to be taken (add, delete, modify)
 with the appropriate details. For 'add' instructions, specify the message ID after which the new content should be added.
-For 'delete' instructions, specify the message ID to be deleted.
+For 'delete' instructions, specify the message ID to be deleted, not only the message itself, but also the related messages which appear before or after (same context).
 For 'modify' instructions, specify the message ID and the new content.
 Format the response as follows: \n" 
 {format_instructions}
